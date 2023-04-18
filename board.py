@@ -13,4 +13,6 @@ class Board:
         return rows
     
     def place_ship(self, ship):
-        pass
+        for i in range(ship.size):
+            if ship.orientation == "horizontal":
+                self.rows[ship.top_left_coordinate[1]][ship.top_left_coordinate[0] + i] = "#"
