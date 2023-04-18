@@ -11,3 +11,6 @@ class Board:
                 row.append("O")
             rows.append(row)
         return rows
+    
+    def place_ship(self, ship):
+        pass
