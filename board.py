@@ -1,8 +1,13 @@
 class Board:
     def __init__(self, size):
-        self.rows = []
+        self.rows = self.create_rows(size)
+
+    
+    def create_rows(self, size):
+        rows = []
         for i in range(size):
             row = []
             for j in range(size):
                 row.append("O")
-            self.rows.append(row)
+            rows.append(row)
+        return rows
